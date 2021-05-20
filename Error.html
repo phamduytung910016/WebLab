@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/vendor/bootstrap/css/404.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="error404">
+        <h1 class="logo"><a href="#">Logo</a></h1>
+
+        <h2>Không Tìm Thấy Trang</h2>
+
+        <p>
+            <a class="button primary" href="index.html">« Home</a>
+            <a class="button control-more-info" href="#">More Info</a>
+        </p>
+
+        <div class="more-info">
+            <p>Trang bạn yêu cầu không tồn tại hoặc liên kết đến trang đó đã hỏng</p>
+            <p>Bạn có thể trở về <a href="index.html">trang chủ</a> hoặc sử dụng khung tìm kiếm phía dưới</p>
+
+            <div class="searchbox">
+                <form action="#" class="searchform">
+                    <input type="text" id="s" name="s" placeholder="Search...">
+                    <input type="hidden" value="submit">
+                </form>
+            </div>
+        </div>
+        <!--End .more-info-->
+    </div>
+    <!--End error404-->
+    <script src="vendor/jquery/jquery-1.8.2.min.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $('.control-more-info').click(function() {
+                $('.more-info').slideToggle('500');
+
+                return false;
+            });
+        });
+    </script>
+</body>
+
+</html>
